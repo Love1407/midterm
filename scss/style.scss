@@ -1,3 +1,5 @@
+// SCSS for Midterm — Lovepreet Singh
+// Rubric: set $primary to red and target h1
 $primary: red;
 
 h1 {
@@ -5,13 +7,72 @@ h1 {
   font-weight: 700;
 }
 
-.light-gray-header { background: #f2f2f2; }
+/* Header & Footer bars */
+.light-gray-header {
+  background: #4a4a4a;
+  color: #e6e6e6;
 
+  a { color: #ff6d6d; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+/* Instructions (left column) */
+.text-instructions {
+  color: #b8b8ff;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* Large I/O panel wrapper */
+.io-panel {
+  background: #1f242a;
+  border: 1px solid #394047;
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+/* Huge input text look */
+.input-giant {
+  background: transparent;
+  border: none;
+  color: #e9ecef;
+  font-size: 2.25rem;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Enter button */
+.enter-btn {
+  min-width: 72px;
+  font-weight: 600;
+}
+
+/* Output panel */
 .output-screen {
-  min-height: 3rem;
-  border: 1px solid #ddd;
-  border-radius: .5rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  white-space: pre-wrap;
-  word-break: break-word;
+  background: #3b2e00;   // dark amber
+  color: #f5f5f5;
+  border: 1px solid #5a4a1a;
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-size: 2rem;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+/* Theme polish for dark & light modes */
+:root[data-bs-theme="dark"] {
+  body { background: #1a1a1a; }
+  .io-panel { background: #1f242a; border-color: #394047; }
+  .output-screen { background: #3b2e00; border-color: #5a4a1a; color: #fff; }
+  .text-instructions { color: #b8b8ff; }
+}
+
+:root[data-bs-theme="light"] {
+  body { background: #f7f7f7; color: #202020; }
+  .light-gray-header { background: #e7e7e7; color: #333; }
+  .text-instructions { color: #5555aa; }
+  .io-panel { background: #ffffff; border-color: #d9d9d9; }
+  .output-screen { background: #fff7e0; color: #202020; border-color: #e8cf7a; }
 }
