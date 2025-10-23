@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="mb-5 light-gray-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-2">
+          <div class="d-flex align-items-center gap-3">
+            <a class="link-secondary" href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noopener">HTML5</a>
+            <a class="link-secondary" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">JavaScript</a>
+            <a class="link-secondary" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">CSS</a>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="btn-group me-2">
+              <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">Dark</button>
+            </div>
+            <div class="btn-group me-2">
+              <button class="btn btn-light btn-sm" data-bs-theme-value="light">Light</button>
+            </div>
+            <button type="button" class="btn btn-secondary btn-sm">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="row mb-3">
+        <div class="col-2 d-flex justify-content-end align-items-center">
+          <h1 class="h5 m-0">Factorial</h1>
+        </div>
+        <div class="col-10 d-flex align-items-center">
+          <input id="userInput" type="number" min="0" step="1" class="form-control" placeholder="Enter a whole number e.g. 3" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2 d-flex justify-content-end align-items-center">
+          <button class="btn btn-secondary" onclick="calculatePower()">Enter</button>
+        </div>
+        <div class="col-10 d-flex align-items-center">
+          <div id="output" class="output-screen p-2 w-100">Output will be displayed here...</div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center light-gray-header mt-3 py-3">
+      <small>&copy; <span id="year"></span> Your Name. All rights reserved.</small>
+    </footer>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

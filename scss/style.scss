@@ -1,0 +1,17 @@
+$primary: red;
+
+h1 {
+  color: $primary;
+  font-weight: 700;
+}
+
+.light-gray-header { background: #f2f2f2; }
+
+.output-screen {
+  min-height: 3rem;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
